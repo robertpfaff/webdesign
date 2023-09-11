@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&family=Source+Code+Pro:wght@200;400;600;800&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&display=swap');
+
+* {
+    font-family: "Poppins", "Vollkorn", "Source Code Pro", sans-serif;
+    font-size: 18px;
+    background-color: ivory;
+    place-content: center;
+}
+
+.grid-container {
+    display: grid;
+    border: solid thin black;
+    overflow: visible;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    padding: 20px;
+    width: 80%;
+}
+
+.colors {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+        "blue blue-box green green-box"
+        "purple purple-box grey grey-box"
+        "plums plums-box orange orange-box";
+
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.fonts {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "poppins-font-sample-200-normal"
+        "poppins-font-sample-200-italic"
+        "poppins-font-sample-400-normal"
+        "poppins-font-sample-400-italic"
+        "poppins-font-sample-600-normal"
+        "poppins-font-sample-600-italic"
+        "poppins-font-sample-800-normal"
+        "poppins-font-sample-800-italic";
+
+    align-items: stretch;
+
+}
+
+.elements {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: auto;
+    align-items: stretch;
+    grid-template-areas:
+        "main-table unorder-list"
+        "h1-header order-list";
+    
+    align-items: stretch;
+    justify-content: space-between;
+   
+}
+
+.title {
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.header {
+    color: black;
+    font-weight: 600;
+}
+
+.blue {
+    grid-area: blue;
+    background-color: #2A6787;
+}
+
+.blue-text {
+    grid-area: blue-box;
+}
+
+.green {
+    grid-area: green;
+    background-color: #71832f;
+}
+
+.green-text {
+    grid-area: green-box;
+}
+
+.purple {
+    grid-area: purple;
+    background-color:  #CCCCFF;
+}
+
+.purple-text {
+    grid-area: purple-box;
+}
+
+.grey {
+    grid-area: grey;
+    background-color: #686F73;
+}
+
+.grey-text {
+    grid-area: grey-box;
+}
+
+.red {
+    grid-area: orange;
+    background-color:  #BB2F30;
+}
+
+.orange-text {
+    grid-area: orange-box;
+}
+
+.plums {
+    grid-area: plums;
+    background-color:  #8e4585 ;
+}
+
+.plums-text {
+    grid-area: plums-box;
+}
+
+.font-pop-200-normal {
+    color:black;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.font-pop-200-italic {
+    color:black;
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 200;
+}
+
+.font-pop-400-normal {
+    color:black;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.font-pop-400-italic {
+    color:black;
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 400;
+}
+
+.font-pop-600-normal {
+    color:black;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+}
+
+.font-pop-600-italic {
+    color:black;
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 600;
+}
+
+.font-pop-800-normal {
+    color:black;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 800;
+}
+
+.font-pop-800-italic {
+    color:black;
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: 800;
+}
+
+.font-vol-200-normal {
+    color:black;
+    font-family: "Vollkorn";
+    font-style: normal;
+    font-weight: 200;
+}
+
+.font-vol-200-italic {
+    color:black;
+    font-family: "Vollkorn";
+    font-style: italic;
+    font-weight: 200;
+}
+
+.font-vol-400-normal {
+    color:black;
+    font-family: "Vollkorn";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.font-vol-400-italic {
+    color:black;
+    font-family: "Vollkorn";
+    font-style: italic;
+    font-weight: 400;
+}
+
+.font-vol-600-normal {
+    color:black;
+    font-family: "Vollkorn";
+    font-style: normal;
+    font-weight: 600;
+}
+
+.font-vol-600-italic {
+    color:black;
+    font-family: "Vollkorn";
+    font-style: italic;
+    font-weight: 600;
+}
+
+.font-vol-800-normal {
+    color:black;
+    font-family: "Vollkorn";
+    font-style: normal;
+    font-weight: 800;
+}
+
+.font-vol-800-italic {
+    color:black;
+    font-family: "Vollkorn";
+    font-style: italic;
+    font-weight: 800;
+}
+
+.font-src-200-normal {
+    color:black;
+    font-family: "Source Code Pro";
+    font-style: normal;
+    font-weight: 200;
+}
+
+.font-src-200-italic {
+    color:black;
+    font-family: "Source Code Pro";
+    font-style: italic;
+    font-weight: 200;
+}
+
+.font-src-400-normal {
+    color:black;
+    font-family: "Source Code Pro";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.font-src-400-italic {
+    color:black;
+    font-family: "Source Code Pro";
+    font-style: italic;
+    font-weight: 400;
+}
+
+.font-src-600-normal {
+    color:black;
+    font-family: "Source Code Pro";
+    font-style: normal;
+    font-weight: 600;
+}
+
+.font-src-600-italic {
+    color:black;
+    font-family: "Source Code Pro";
+    font-style: italic;
+    font-weight: 600;
+}
+
+.font-src-800-normal {
+    color:black;
+    font-family: "Source Code Pro";
+    font-style: normal;
+    font-weight: 800;
+}
+
+.font-sec-800-italic {
+    color:black;
+    font-family: "Source Code Pro";
+    font-style: italic;
+    font-weight: 800;
+}
+
+
+ 
+.content-table { 
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    max-width: 800px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+.content-table caption {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  
+.content-table thead tr th {
+    font-family: "Source Code Pro", sans-serif; 
+    background-color: #2A6787;
+    color: #ffffff;
+    text-align: left;
+    font-weight: normal;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #2A6787;
+  }
+
+  .content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #2A6787;
+  }
+  
+.unordered-list {
+    grid-area: unorder-list;
+    font-family: "Source Code Pro";
+    font-weight: 600;
+
+  }
+
+.ordered-list {
+    grid-area: order-list;
+    font-family: "Source Code Pro";
+    font-weight: 600;
+
+  }
+
+.h1 {
+    grid-area: h1-header;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 2.5em;
+}
+ 
+  
